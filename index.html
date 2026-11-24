@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Records System</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Student Records System</h1>
+    <p id="signedInAs">Not signed in</p>
+
+    <h2>Operator sign in</h2>
+    <input id="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+    <br>
+    <button id="signInBtn">Sign in</button>
+    <button id="registerBtn">Register</button>
+    <button id="signOutBtn">Sign out</button>
+    <p id="authMsg"></p>
+
+    <h2>Add or edit a student</h2>
+    <input id="studentId" placeholder="Student number e.g. 2025-001" />
+    <input id="firstName" placeholder="First name" />
+    <input id="lastName" placeholder="Last name" />
+    <input id="course" placeholder="Course e.g. BSIT" />
+    <br>
+    <button id="saveBtn">Save student</button>
+    <button id="clearBtn">Clear form</button>
+    <p id="saveMsg"></p>
+
+    <h2>Student list</h2>
+    <input id="searchInput" placeholder="Search name or student number" />
+    <button id="searchBtn">Search</button>
+    <button id="loadAllBtn">Load all</button>
+    <div id="studentList"></div>
+
+    <h2>Course report</h2>
+    <input id="courseReportInput" placeholder="Course e.g. BSIT" />
+    <button id="countBtn">Count students</button>
+    <p id="countResult"></p>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
